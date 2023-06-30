@@ -1,0 +1,11 @@
+.dockerignore
+.git
+.gitignore
+.gitlab-ci.yml
+.gitpod.yml
+Dockerfile
+LICENSE
+README.md
+node_modules
+package.json
+VERSION
