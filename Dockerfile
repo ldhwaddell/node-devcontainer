@@ -5,6 +5,7 @@ ARG USERNAME=node
 
 FROM mcr.microsoft.com/devcontainers/javascript-node:${NODE_VERSION}-${DEBIAN_VERSION}
 
+# Ensure terminal history is saved
 RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" \
     && mkdir /commandhistory \
     && touch /commandhistory/.bash_history \
